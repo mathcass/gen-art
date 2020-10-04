@@ -1,18 +1,19 @@
 import * as p5 from 'p5';
 
 const sketch = (p) => {
-    let x = 100;
-    let y = 100;
-
     p.setup = function() {
-        p.createCanvas(700, 410);
+        p.createCanvas(400, 400);
     };
 
     p.draw = function() {
-        p.background(0);
-        p.fill(255);
-        p.rect(x, y, 50, 50);
+        if (p.mouseIsPressed) {
+            p.fill(0);
+        } else {
+            p.fill(255);
+        }
+        p.ellipse(p.mouseX, p.mouseY, 80, 80);
     };
+
 };
 
 let myp5 = new p5(sketch);
