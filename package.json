@@ -1,0 +1,21 @@
+{
+    "name": "gen-art",
+    "version": "1.0.0",
+    "description": "My generative art project",
+    "private": true,
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "build": "webpack",
+        "dev": "webpack-dev-server --inline --hot"
+    },
+    "author": "Cass <cass@petrus.me>",
+    "license": "ISC",
+    "dependencies": {
+        "p5": "^1.1.9"
+    },
+    "devDependencies": {
+        "webpack": "^4.44.2",
+        "webpack-cli": "^3.3.12",
+        "webpack-dev-server": "^3.11.0"
+    }
+}
